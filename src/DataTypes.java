@@ -10,13 +10,16 @@
 
 public class DataTypes {
     public static void main (String[] args){
-        byte b1 = 21; // byte
-        short shortNumber = 241; //short
-        int i1 = 25; // int
-        long longNumber = 1313; //long
-        double balance = 123.24; //double
-        float floatingNumber = 241.3f; // floating/float
+        byte b1 = 21; // byte after 2 integers error
+        short shortNumber = 24; //short after 6 digits it errors
+        int i1 = 2500; // int can hold 9 digits
+        long longNumber = 1313000000; //long can hold 10 digits
+        double balance = 123; //double even if you don't put digits computer will auto .00
+        float floatingNumber = 241.3f; // floating/float - every float needs f at the end
         boolean bool1 = true; //boolean
-        char char1 = 'A'; //char
+        char char1 = 'A'; //char can only hold 1 character and don't double quote
+        System.out.println(b1);
+        System.out.println(balance);
     }
 }
+
